@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    // "incremental": true,                   /* Enable incremental compilation */
+    "target": "es6",
+    /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "lib",
+    "strict": true,
+    /* Enable all strict type-checking options. */
+    "noImplicitAny": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    /* List of root folders whose combined content represents the structure of the project at runtime. */
+    "typeRoots": [
+      "./node_modules/@types"
+    ],                       /* List of folders to include type definitions from. */
+    "esModuleInterop": true,
+    /* Advanced Options */
+    "resolveJsonModule": true,
+    /* Include component imported with '.json' extension */
+    "skipLibCheck": true,
+    /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+    "useUnknownInCatchVariables": false
+  },
+  "exclude": [
+    "**/*.test.ts"
+  ]
+}

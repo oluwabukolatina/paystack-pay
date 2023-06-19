@@ -1,0 +1,1 @@
+export { Paystack } from './paystack';

@@ -1,0 +1,10 @@
+const TRANSACTION_URL = 'transaction/';
+export const PAYSTACK_INITIALIZE_TRANSACTION_URL = `${TRANSACTION_URL}initialize`;
+export const PAYSTACK_VERIFY_TRANSACTION_URL = `${TRANSACTION_URL}verify`;
+export const PAYSTACK_GET_BANKS_URL = 'bank';
+export const PAYSTACK_RESOLVE_ACCOUNT_NUMBER_URL =
+  'bank/resolve?account_number=';
+export const PAYSTACK_CREATE_TRANSFER_RECIPIENT_URL = 'transferrecipient';
+export const PAYSTACK_TRANSFER_URL = 'transfer';
+export const PAYSTACK_GET_PAYMENT_PLANS_URL = 'plan';
+export const PAYSTACK_CHARGE_AUTHORIZATION_URL = `${TRANSACTION_URL}charge_authorization`;
