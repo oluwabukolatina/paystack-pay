@@ -47,7 +47,12 @@ $ const  paystack = new Paystack('secret_key');
       ```
       $ paystack.transaction.verifyTransaction(data)
       ```
-## Tests
+    - chargeTransactionAuthorization
+    ````
+  $ paystack.transaction.chargeTransactionAuthorization(data)
+
+````
+
 
   > run the command below
   ```shell
