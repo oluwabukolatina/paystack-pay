@@ -5,6 +5,7 @@ export interface ChargeTransactionAuthorizationInterface {
   email: string;
   amount: number; // this is kobo
   metadata: CustomInterface;
+  reference?: string;
 }
 
 export interface InitializeTransactionInterface {

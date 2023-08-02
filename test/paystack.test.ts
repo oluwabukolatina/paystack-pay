@@ -6,14 +6,17 @@ const paystack = new Paystack(
 );
 describe('', () => {
   it('Test charge authorization', async () => {
+    const reference = `MPY-${PaystackHelper.createRandomStringAndNumber()}`;
     const result = await paystack.transaction.chargeTransactionAuthorization({
       authorization_code: 'AUTH_d4ioucuain',
       email: 'titans@awabahng.com',
       amount: 30000,
       metadata: { userId: 1 },
+      reference,
     });
     expect(result).toHaveProperty('amount');
     expect(result).toHaveProperty('reference');
+    expect(result.reference).toBe(reference);
     expect(result).toHaveProperty('gateway_response');
     expect(result).toHaveProperty('authorization');
     expect(result).toHaveProperty('customer');
