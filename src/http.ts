@@ -1,7 +1,7 @@
 import { Axios } from 'axios';
 import { InitializeTransactionInterface } from './paystack.interface';
 
-const HttpHelper = {
+const Http = {
   async initializeTransaction(
     httpClient: Axios,
     data: InitializeTransactionInterface,
@@ -9,4 +9,4 @@ const HttpHelper = {
     return httpClient.post('/transaction/initialize', data);
   },
 };
-export default HttpHelper;
+export default Http;

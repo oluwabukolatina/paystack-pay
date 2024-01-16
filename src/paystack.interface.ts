@@ -9,11 +9,10 @@ export interface ChargeTransactionAuthorizationInterface {
 }
 
 export interface InitializeTransactionInterface {
-  amount: number;
+  channels?: Array<string>; // ["card", "bank", "ussd", "qr", "mobile_money", "bank_transfer", "eft"]
+  amount: number; // in kobo
   email: string;
   callback_url: string;
   metadata?: CustomInterface;
   reference: string;
-  // ["card", "bank", "ussd", "qr", "mobile_money", "bank_transfer", "eft"]
-  channels?: Array<string>;
 }
